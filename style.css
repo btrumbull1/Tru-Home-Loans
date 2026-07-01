@@ -1,7 +1,598 @@
-:root{--n:#0f2747;--g:#caa04a}*{box-sizing:border-box}.logo img{height:120px;width:auto}.body{margin:0;font-family:Inter,sans-serif;color:#233}.container{max-width:1180px;margin:auto;padding:0 24px}header{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.08)}.nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}.brand{display:flex;gap:12px;align-items:center}.logo{background:var(--n);color:#fff;padding:12px 16px;border-radius:8px;font-weight:700}nav a{margin-left:18px;color:var(--n);text-decoration:none}.phone,.gold{background:var(--g);color:#fff;padding:12px 18px;border-radius:6px}.hero{background:linear-gradient(rgba(15,39,71,.75),rgba(15,39,71,.75)),linear-gradient(135deg,#274f7d,#0f2747);color:#fff;padding:90px 0}.hero-grid{display:grid;grid-template-columns:2fr 1fr;gap:40px}.badge{background:rgba(255,255,255,.15);padding:8px 14px;border-radius:20px}h1{font-family:'Cormorant Garamond',serif;font-size:60px}.outline{border:2px solid #fff;color:#fff;padding:10px 16px;border-radius:6px}.card,.quote,.tile{background:#fff;color:#233;border-radius:12px;padding:24px;box-shadow:0 8px 24px rgba(0,0,0,.08)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;margin:40px 0}.alt{background:#f5f5f5;padding:60px 0}.footer-logo{
+/* ==========================================================
+   TRU HOME LOANS
+   Premium Website Styles
+   ========================================================== */
 
-    width:220px;
+:root{
+    --navy:#0B2342;
+    --navy-light:#173D6A;
+    --gold:#C79A3B;
+    --gold-light:#D8AF5A;
+    --white:#FFFFFF;
+    --gray:#F7F8FA;
+    --text:#2D3748;
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+    --transition:.30s ease;
+}
+
+/* ==========================================================
+   RESET
+   ========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:#fff;
+
+    color:var(--text);
+
+    line-height:1.6;
+
+}
+
+/* ==========================================================
+   CONTAINER
+   ========================================================== */
+
+.container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:0 24px;
+
+}
+
+/* ==========================================================
+   HEADER
+   ========================================================== */
+
+.site-header{
+
+    background:white;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:9999;
+
+    box-shadow:0 3px 18px rgba(0,0,0,.08);
+
+}
+
+.site-header .container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+}
+
+/* ==========================================================
+   LOGO
+   ========================================================== */
+
+.logo img{
+
+    width:auto;
+
+    height:105px;
+
+    transition:.3s;
+
+}
+
+.logo img:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* ==========================================================
+   NAVIGATION
+   ========================================================== */
+
+nav{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:34px;
+
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:var(--navy);
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+nav a:hover{
+
+    color:var(--gold);
+
+}
+
+/* ==========================================================
+   PHONE
+   ========================================================== */
+
+.header-phone a{
+
+    color:var(--navy);
+
+    text-decoration:none;
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+/* ==========================================================
+   APPLY BUTTON
+   ========================================================== */
+
+.apply-button{
+
+    background:var(--gold);
+
+    color:white;
+
+    padding:15px 28px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:var(--transition);
+
+}
+
+.apply-button:hover{
+
+    background:var(--navy);
+
+}
+
+/* ==========================================================
+   HERO
+   ========================================================== */
+
+.hero{
+
+    background:
+
+    linear-gradient(rgba(11,35,66,.65),
+
+    rgba(11,35,66,.65)),
+
+    url("images/hero-home.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    min-height:700px;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.hero-content{
+
+    color:white;
+
+    max-width:650px;
+
+}
+
+.hero h1{
+
+    font-size:72px;
+
+    line-height:1.05;
 
     margin-bottom:20px;
 
-}.split{display:grid;grid-template-columns:2fr 1fr;gap:30px}footer{background:#08192e;color:#fff;padding:30px 0;margin-top:40px}@media(max-width:900px){.hero-grid,.split,.nav{display:block}h1{font-size:42px}}
+}
+
+.hero p{
+
+    font-size:22px;
+
+    margin-bottom:35px;
+
+}
+
+/* ==========================================================
+   BUTTONS
+   ========================================================== */
+
+.button{
+
+    display:inline-block;
+
+    padding:18px 30px;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    margin-right:18px;
+
+    transition:.3s;
+
+}
+
+.button-primary{
+
+    background:var(--gold);
+
+    color:white;
+
+}
+
+.button-primary:hover{
+
+    background:#A67827;
+
+}
+
+.button-secondary{
+
+    background:white;
+
+    color:var(--navy);
+
+}
+
+.button-secondary:hover{
+
+    background:#ececec;
+
+}
+
+/* ==========================================================
+   FEATURE BAR
+   ========================================================== */
+
+.features{
+
+    background:var(--navy);
+
+    color:white;
+
+    padding:35px 0;
+
+}
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    text-align:center;
+
+}
+
+.feature{
+
+    padding:20px;
+
+}
+
+/* ==========================================================
+   SECTION
+   ========================================================== */
+
+section{
+
+    padding:90px 0;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    color:var(--navy);
+
+    font-size:42px;
+
+    margin-bottom:60px;
+
+}
+
+/* ==========================================================
+   LOAN PROGRAMS
+   ========================================================== */
+
+.loan-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.loan-card{
+
+    background:white;
+
+    border-radius:12px;
+
+    box-shadow:var(--shadow);
+
+    padding:40px;
+
+    transition:.3s;
+
+}
+
+.loan-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.loan-card h3{
+
+    color:var(--navy);
+
+    margin-bottom:18px;
+
+}
+
+.loan-card a{
+
+    color:var(--gold);
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+}
+
+/* ==========================================================
+   ABOUT
+   ========================================================== */
+
+.about{
+
+    background:#f8f8f8;
+
+}
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+/* ==========================================================
+   CALCULATOR
+   ========================================================== */
+
+.calculator{
+
+    background:var(--gold);
+
+    color:white;
+
+    text-align:center;
+
+    border-radius:15px;
+
+    padding:70px;
+
+}
+
+/* ==========================================================
+   CTA
+   ========================================================== */
+
+.cta{
+
+    background:var(--navy);
+
+    color:white;
+
+    text-align:center;
+
+}
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+
+footer{
+
+    background:#07182D;
+
+    color:white;
+
+    padding:60px 0;
+
+}
+
+.footer-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:50px;
+
+}
+
+.footer-logo{
+
+    width:250px;
+
+    margin-bottom:25px;
+
+}
+
+footer a{
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+footer a:hover{
+
+    color:var(--gold);
+
+}
+
+.nmls{
+
+    margin-top:25px;
+
+    color:#cccccc;
+
+    font-size:14px;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media(max-width:992px){
+
+.site-header .container{
+
+    flex-direction:column;
+
+}
+
+nav{
+
+    margin-top:20px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.loan-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.feature-grid{
+
+    grid-template-columns:1fr 1fr;
+
+}
+
+.about-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.hero h1{
+
+    font-size:48px;
+
+}
+
+.hero{
+
+    min-height:550px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.feature-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.footer-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.logo img{
+
+    height:75px;
+
+}
+
+.hero h1{
+
+    font-size:40px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+.button{
+
+    display:block;
+
+    margin-bottom:15px;
+
+    text-align:center;
+
+}
+
+}
